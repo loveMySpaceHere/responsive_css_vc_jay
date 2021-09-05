@@ -14,6 +14,10 @@
     border-radius:var(--main-radius);
     cursor:pointer;
 }
+.topheader {
+    text-align: center;
+    background: seashell;
+}
  .container{
 
     /* border: 2px solid black; */
@@ -135,6 +139,7 @@ main{
     min-height: 6rem;
     resize: vertical;
     padding: 0.5rem 0 0 0.5rem;
+    border-radius:var(--main-radius);
    }
    
    #submit{
@@ -161,10 +166,10 @@ footer{
         grid-template-areas:
             "navbar"
             "sidebar"
-            "main"
             "content1"
             "content2"
             "content3"
+            "main"
             "footer" ;
     }
 }
