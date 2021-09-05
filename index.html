@@ -26,6 +26,32 @@
 
         </navbar>
         <main>Enquire about a car
+            <form id="enquiry-form">
+                <div class='form-input'>
+                    <label id='name-label'>FullName</label>
+                    <input type='text' id='name' placeholder='Enter your name' class='form-input-size' required />
+                </div>
+                <div class='form-input'>
+                    <label id='email-label'>Email</label>
+                    <input type='email' id='email' placeholder='Enter your email' class='form-input-size' required />
+                </div>
+                <div class='form-input'>
+                    <p>Choose a car</p>
+                    <select id='dropdown' class='form-input-size' required>
+                        <option disabled selected value>Select your car</option>
+                        <option value="Blue Beatle">Blue Beatle</option>
+                        <option value="Yellow Queen">Yellow Queen</option>
+                        <option value="True Antique">True Antique</option>   
+                    </select>
+                </div>
+                <div class='form-input'>
+                    <p>Comments</p>
+                    <textarea type='text' placeholder='Enter your comment here...'></textarea>
+                </div>
+                <div class='form-input'>
+                    <button type='submit' id='submit'>Submit</button>
+                </div>
+            </form>
 
         </main>
             <div id="sidebar"><em>About Us</em>
