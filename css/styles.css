@@ -5,7 +5,7 @@
      --main-radius: 5px;
      --main-padding: 5px;
  }
-.logo{
+/* .logo{
     height: 50px;
     float: left;
     margin-left: 2rem;
@@ -13,7 +13,7 @@
     background: lightgrey;
     border-radius:var(--main-radius);
     cursor:pointer;
-}
+} */
 .topheader {
     text-align: center;
     background: seashell;
@@ -57,8 +57,12 @@ navbar{
     padding: 1rem 0;
     /* border-radius:var(--main-radius); */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+}
+
+.nav-list img {
+    height: 50px;
 }
 
 .nav-item{
@@ -86,14 +90,13 @@ main{
 }
 #content1{
     background: #6fffd2;
-    grid-area: content1;
+    grid-area: content1; 
     border-radius:var(--main-radius);
     padding-top: var(--main-padding);
 }
 
 .carimage1{
-    height: 250px;
-    width: 350px;
+   width: 100%;
 
 }
     
@@ -102,12 +105,14 @@ main{
 #content2{
     background: #64ffda;
     grid-area: content2;
+
     border-radius:var(--main-radius);
     padding-top: var(--main-padding);
 }
 #content3{
     background: #73ffba;
     grid-area: content3;
+  
     border-radius:var(--main-radius);
     padding-top: var(--main-padding);
 
@@ -172,4 +177,20 @@ footer{
             "main"
             "footer" ;
     }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-list{
+        background: lightgrey;
+        margin: 0;
+         border-radius:var(--main-radius);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .nav-item {
+        padding: 10px;
+    }
+
 }
