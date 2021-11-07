@@ -57,13 +57,18 @@ navbar{
     padding: 1rem 0;
     /* border-radius:var(--main-radius); */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
+navbar img {
+    height: 50px;
+    float: left;
+}
+/* 
 .nav-list img {
     height: 50px;
-}
+} */
 
 .nav-item{
     list-style: none;
@@ -95,9 +100,18 @@ main{
     padding-top: var(--main-padding);
 }
 
+#contact h3 {
+    text-align:center;
+    
+}
+
 .carimage1{
    width: 100%;
 
+}
+
+.mapouter {
+    margin: 20px;
 }
     
 
@@ -156,12 +170,15 @@ main{
     cursor: pointer;
     border: none;
    }
+
 footer{
     background: #1de9b6;
     grid-area: footer;
     border-radius:var(--main-radius);
     padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
 }
+
 
 @media only screen and (max-width: 550px) {
 
